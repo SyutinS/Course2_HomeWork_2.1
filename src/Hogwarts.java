@@ -28,9 +28,9 @@ private static int scores() {
         };
 
         Slytherin[] slytherin = {
-                new Slytherin("Драко", "Малфой", 90, 68, 50,50,50,47),
-                new Slytherin("Грэхэм", "Монтегю", 70, 30, 50,50,50,47),
-                new Slytherin("Грегори", "Гойл", 70, 50, 30,50,50,47),
+                new Slytherin("Драко", "Малфой", scores(), scores(), scores(), scores(), scores(), scores()),
+                new Slytherin("Грэхэм", "Монтегю", scores(), scores(), scores(), scores(), scores(), scores()),
+                new Slytherin("Грегори", "Гойл", scores(), scores(), scores(), scores(), scores(), scores()),
         };
 
         PrintStudent.print(gryffindor);
