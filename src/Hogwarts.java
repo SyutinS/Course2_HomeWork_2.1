@@ -41,5 +41,6 @@ private static int scores() {
         ComparisonStudents.compare(hufflepuff);
         ComparisonStudents.compare(ravenclaw);
         ComparisonStudents.compare(slytherin);
+        ComparisonStudents.compareTwoStudents(gryffindor, hufflepuff, ravenclaw, slytherin);
     }
 }
