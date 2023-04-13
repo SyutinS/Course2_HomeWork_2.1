@@ -1,14 +1,14 @@
 public class Student { // Сила магии и расстояние трансгресии
     private final String firstName;
     private final String lastName;
-    private final int powerMagic;
-    private final int distanceTransgression;
+//    private final int powerMagic;
+//    private final int distanceTransgression;
 
-    public Student(String firstName, String lastName, int powerMagic, int distanceTransgression) {
+    public Student(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.powerMagic = powerMagic;
-        this.distanceTransgression = distanceTransgression;
+//        this.powerMagic = powerMagic;
+//        this.distanceTransgression = distanceTransgression;
     }
 
     public String getFirstName() {
@@ -19,21 +19,18 @@ public class Student { // Сила магии и расстояние транс
         return lastName;
     }
 
-    public int getPowerMagic() {
-        return powerMagic;
-    }
-
-    public int getDistanceTransgression() {
-        return distanceTransgression;
-    }
+//    public int getPowerMagic() {
+//        return powerMagic;
+//    }
+//
+//    public int getDistanceTransgression() {
+//        return distanceTransgression;
+//    }
 
     @Override
     public String toString() {
-        return "Студент:" + /*getClass() + ": " +*/
+        return "Студент: " +
                 " " + firstName +
-                " " + lastName +
-                " /" +
-                " сила магии = " + powerMagic +
-                " расстояние трансгрессии = " + distanceTransgression;
+                " " + lastName;
     }
 }

@@ -1,16 +1,32 @@
 public class Ravenclaw extends Student {
     // умны, мудры, остроумны и полны творчества.
+//    private final String firstName;
+//    private final String lastName;
+    private final int powerMagic;
+    private final int distanceTransgression;
     private final int smart;
     private final int wisdom;
     private final int witty;
     private final int creative;
 
     public Ravenclaw(String firstName, String lastName, int powerMagic, int distanceTransgression, int smart, int wisdom, int witty, int creative) {
-        super(firstName, lastName, powerMagic, distanceTransgression);
+        super(firstName, lastName);
+//        this.firstName = firstName;
+//        this.lastName = lastName;
+        this.powerMagic = powerMagic;
+        this.distanceTransgression = distanceTransgression;
         this.smart = smart;
         this.wisdom = wisdom;
         this.witty = witty;
         this.creative = creative;
+    }
+
+    public int getPowerMagic() {
+        return powerMagic;
+    }
+
+    public int getDistanceTransgression() {
+        return distanceTransgression;
     }
 
     public int getSmart() {
@@ -32,7 +48,9 @@ public class Ravenclaw extends Student {
     @Override
     public String toString() {
         return "Когтевран: " + super.toString() +
-                " ум = " + smart +
+                " / сила магии = " + powerMagic +
+                " / расстояние трансгрессии = " + distanceTransgression +
+                "/ ум = " + smart +
                 ", мудрость = " + wisdom +
                 ", остроумие = " + witty +
                 ", творчество = " + creative;

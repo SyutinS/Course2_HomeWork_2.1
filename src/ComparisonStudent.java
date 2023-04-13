@@ -1,10 +1,75 @@
 public class ComparisonStudent {
-    int totalPoints = 0;
-    public static void comparison(Student[] student) {
 
-        for (int i = 0; i < student.length; i++) {
 
+    public static void compare(Gryffindor[] gryffindor) {
+        int i = 0;
+        int j = 0;
+        int maxPoint = Integer.MIN_VALUE;
+        for (Gryffindor gryffindors : gryffindor) {
+            int totalPoints = 0;
+            totalPoints = totalPoints + gryffindors.getPowerMagic() + gryffindors.getDistanceTransgression() + gryffindors.getNobility()
+            + gryffindors.getHonor() + gryffindors.getBravery();
+            if (totalPoints > maxPoint) {
+                maxPoint = totalPoints;
+                j = i;
+            }
+            i++;
         }
+        System.out.println("Лучший студент факультета: " + gryffindor[j].toString()
+                + " / собравший: " + maxPoint + " очков.");
     }
 
+//    public static void compare(Gryffindor[] gryffindor) {
+//        int i = 0;
+//        int j = 0;
+//        int maxPoint = Integer.MIN_VALUE;
+//        for (Gryffindor gryffindors : gryffindor) {
+//            int totalPoints = 0;
+//            totalPoints = totalPoints + gryffindors.getPowerMagic() + gryffindors.getDistanceTransgression() + gryffindors.getNobility()
+//                    + gryffindors.getHonor() + gryffindors.getBravery();
+//            if (totalPoints > maxPoint) {
+//                maxPoint = totalPoints;
+//                j = i;
+//            }
+//            i++;
+//        }
+//        System.out.println("Лучший студент факультета: " + gryffindor[j].toString()
+//                + " / собравший: " + maxPoint + " очков.");
+//    }
+//
+//    public static void compare(Gryffindor[] gryffindor) {
+//        int i = 0;
+//        int j = 0;
+//        int maxPoint = Integer.MIN_VALUE;
+//        for (Gryffindor gryffindors : gryffindor) {
+//            int totalPoints = 0;
+//            totalPoints = totalPoints + gryffindors.getPowerMagic() + gryffindors.getDistanceTransgression() + gryffindors.getNobility()
+//                    + gryffindors.getHonor() + gryffindors.getBravery();
+//            if (totalPoints > maxPoint) {
+//                maxPoint = totalPoints;
+//                j = i;
+//            }
+//            i++;
+//        }
+//        System.out.println("Лучший студент факультета: " + gryffindor[j].toString()
+//                + " / собравший: " + maxPoint + " очков.");
+//    }
+//
+//    public static void compare(Gryffindor[] gryffindor) {
+//        int i = 0;
+//        int j = 0;
+//        int maxPoint = Integer.MIN_VALUE;
+//        for (Gryffindor gryffindors : gryffindor) {
+//            int totalPoints = 0;
+//            totalPoints = totalPoints + gryffindors.getPowerMagic() + gryffindors.getDistanceTransgression() + gryffindors.getNobility()
+//                    + gryffindors.getHonor() + gryffindors.getBravery();
+//            if (totalPoints > maxPoint) {
+//                maxPoint = totalPoints;
+//                j = i;
+//            }
+//            i++;
+//        }
+//        System.out.println("Лучший студент факультета: " + gryffindor[j].toString()
+//                + " / собравший: " + maxPoint + " очков.");
+//    }
 }

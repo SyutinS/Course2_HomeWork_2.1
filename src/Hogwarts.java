@@ -9,9 +9,9 @@ public class Hogwarts {
 //        На факультет Пуффендуй учатся Захария Смит, Седрик Диггори, Джастин Финч-Флетчли.
 //        На факультете Когтевран учится Чжоу Чанг, Падма Патил и Маркус Белби.
         Gryffindor[] gryffindor = {
-                new Gryffindor("Гарри", "Поттер", 100, 50, 2, 5, 100),
-                new Gryffindor("Гермиона", "Грейнджер", 90, 80, 2, 5, 100),
-                new Gryffindor("Рон", "Уизли", 10, 40, 2, 5, 100),
+                new Gryffindor("Гарри", "Поттер", 100, 50, 20, 30, 100),
+                new Gryffindor("Гермиона", "Грейнджер", 900, 80, 30, 50, 100),
+                new Gryffindor("Рон", "Уизли", 10, 40, 25, 40, 100),
         };
 
         Hufflepuff[] hufflepuff = {
@@ -37,9 +37,9 @@ public class Hogwarts {
         PrintStudent.print(hufflepuff);
         PrintStudent.print(ravenclaw);
         PrintStudent.print(slytherin);
-        ComparisonStudent.comparison(gryffindor);
-//        ComparisonStudent.comparison(hufflepuff);
-//        ComparisonStudent.comparison(ravenclaw);
-//        ComparisonStudent.comparison(slytherin);
+        ComparisonStudent.compare(gryffindor);
+//        ComparisonStudent.compare(hufflepuff);
+//        ComparisonStudent.compare(ravenclaw);
+//        ComparisonStudent.compare(slytherin);
     }
 }
