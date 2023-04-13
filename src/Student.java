@@ -19,7 +19,7 @@ public class Student {
     @Override
     public String toString() {
         return "Студент: " +
-                " " + firstName +
-                " " + lastName;
+                " " + getFirstName() +
+                " " + getLastName();
     }
 }

@@ -1,5 +1,3 @@
-import java.util.Random;
-
 public class Gryffindor extends Student {
     //Гриффиндорцам: благородство, честь и храбрость.
     private final int powerMagic;

@@ -1,5 +1,4 @@
-public class ComparisonStudent {
-
+public class ComparisonStudents {
 
     public static void compare(Gryffindor[] gryffindor) {
         int i = 0;

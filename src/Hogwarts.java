@@ -1,22 +1,30 @@
 public class Hogwarts {
+
+private static int scores() {
+    java.util.Random random = new java.util.Random();
+    int score;
+    score = random.nextInt(100);
+    return score;
+}
+
     public static void main(String[] args) {
 
         Gryffindor[] gryffindor = {
-                new Gryffindor("Гарри", "Поттер", 100, 50, 20, 30, 100),
-                new Gryffindor("Гермиона", "Грейнджер", 900, 80, 30, 50, 100),
-                new Gryffindor("Рон", "Уизли", 10, 40, 25, 40, 100),
+                new Gryffindor("Гарри", "Поттер", scores(), scores(), scores(), scores(), scores()),
+                new Gryffindor("Гермиона", "Грейнджер", scores(), scores(), scores(), scores(), scores()),
+                new Gryffindor("Рон", "Уизли", scores(), scores(), scores(), scores(), scores()),
         };
 
         Hufflepuff[] hufflepuff = {
-                new Hufflepuff("Захария", "Смит", 60, 40, 2, 4, 5),
-                new Hufflepuff("Седрик", "Диггори", 45, 75, 2, 4, 5),
-                new Hufflepuff("Джастин", "Финч-Флетчли", 25, 78, 2, 4, 5),
+                new Hufflepuff("Захария", "Смит", scores(), scores(), scores(), scores(), scores()),
+                new Hufflepuff("Седрик", "Диггори", scores(), scores(), scores(), scores(), scores()),
+                new Hufflepuff("Джастин", "Финч-Флетчли", scores(), scores(), scores(), scores(), scores()),
         };
 
         Ravenclaw[] ravenclaw = {
-                new Ravenclaw("Чжоу", "Чанг", 90 , 40, 5,8,10,20),
-                new Ravenclaw("Падма", "Патил", 30, 45, 5,8,10,20),
-                new Ravenclaw("Маркус", "Белби", 30, 70, 5,8,10,20),
+                new Ravenclaw("Чжоу", "Чанг", scores(), scores(), scores(), scores(), scores(), scores()),
+                new Ravenclaw("Падма", "Патил", scores(), scores(), scores(), scores(), scores(), scores()),
+                new Ravenclaw("Маркус", "Белби", scores(), scores(), scores(), scores(), scores(), scores()),
         };
 
         Slytherin[] slytherin = {
@@ -29,9 +37,9 @@ public class Hogwarts {
         PrintStudent.print(hufflepuff);
         PrintStudent.print(ravenclaw);
         PrintStudent.print(slytherin);
-        ComparisonStudent.compare(gryffindor);
-        ComparisonStudent.compare(hufflepuff);
-        ComparisonStudent.compare(ravenclaw);
-        ComparisonStudent.compare(slytherin);
+        ComparisonStudents.compare(gryffindor);
+        ComparisonStudents.compare(hufflepuff);
+        ComparisonStudents.compare(ravenclaw);
+        ComparisonStudents.compare(slytherin);
     }
 }
