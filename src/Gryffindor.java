@@ -1,9 +1,7 @@
 import java.util.Random;
 
 public class Gryffindor extends Student {
-    //Гриффиндорцам присущи благородство, честь и храбрость.
-//    private final String firstName;
-//    private final String lastName;
+    //Гриффиндорцам: благородство, честь и храбрость.
     private final int powerMagic;
     private final int distanceTransgression;
     private final int nobility;
@@ -12,22 +10,12 @@ public class Gryffindor extends Student {
 
     public Gryffindor(String firstName, String lastName, int powerMagic, int distanceTransgression, int nobility, int honor, int bravery) {
         super(firstName, lastName);
-//        this.firstName = firstName;
-//        this.lastName = lastName;
         this.powerMagic = powerMagic;
         this.distanceTransgression = distanceTransgression;
         this.nobility = nobility;
         this.honor = honor;
         this.bravery = bravery;
     }
-
-//    public String getFirstName() {
-//        return firstName;
-//    }
-//
-//    public String getLastName() {
-//        return lastName;
-//    }
 
     public int getPowerMagic() {
         return powerMagic;
@@ -52,9 +40,6 @@ public class Gryffindor extends Student {
     @Override
     public String toString() {
         return "Гриффиндор: " + super.toString() +
-//                "Студент:" + /*getClass() + ": " +*/
-//                " " + firstName +
-//                " " + lastName +
                 " / сила магии = " + powerMagic +
                 " / расстояние трансгрессии = " + distanceTransgression +
                 "/ благородство = " + nobility +

@@ -1,13 +1,6 @@
 public class Hogwarts {
     public static void main(String[] args) {
-//        Student[] student = {
-//                new Student ("Гарри", "Потер"),
-//                new Student ("Хрень", "Малой"),
-//        };
-//        Гарри Поттер, Гермиона Грейнджер и Рон Уизли учатся на факультете Гриффиндор.
-//        Драко Малфой, Грэхэм Монтегю, Грегори Гойл учатся на Слизерине.
-//        На факультет Пуффендуй учатся Захария Смит, Седрик Диггори, Джастин Финч-Флетчли.
-//        На факультете Когтевран учится Чжоу Чанг, Падма Патил и Маркус Белби.
+
         Gryffindor[] gryffindor = {
                 new Gryffindor("Гарри", "Поттер", 100, 50, 20, 30, 100),
                 new Gryffindor("Гермиона", "Грейнджер", 900, 80, 30, 50, 100),
@@ -32,14 +25,13 @@ public class Hogwarts {
                 new Slytherin("Грегори", "Гойл", 70, 50, 30,50,50,47),
         };
 
-//        PrintStudent printStudent = new PrintStudent();
         PrintStudent.print(gryffindor);
         PrintStudent.print(hufflepuff);
         PrintStudent.print(ravenclaw);
         PrintStudent.print(slytherin);
         ComparisonStudent.compare(gryffindor);
-//        ComparisonStudent.compare(hufflepuff);
-//        ComparisonStudent.compare(ravenclaw);
-//        ComparisonStudent.compare(slytherin);
+        ComparisonStudent.compare(hufflepuff);
+        ComparisonStudent.compare(ravenclaw);
+        ComparisonStudent.compare(slytherin);
     }
 }

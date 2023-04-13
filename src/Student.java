@@ -1,14 +1,11 @@
-public class Student { // Сила магии и расстояние трансгресии
+public class Student {
     private final String firstName;
+
     private final String lastName;
-//    private final int powerMagic;
-//    private final int distanceTransgression;
 
     public Student(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-//        this.powerMagic = powerMagic;
-//        this.distanceTransgression = distanceTransgression;
     }
 
     public String getFirstName() {
@@ -18,14 +15,6 @@ public class Student { // Сила магии и расстояние транс
     public String getLastName() {
         return lastName;
     }
-
-//    public int getPowerMagic() {
-//        return powerMagic;
-//    }
-//
-//    public int getDistanceTransgression() {
-//        return distanceTransgression;
-//    }
 
     @Override
     public String toString() {

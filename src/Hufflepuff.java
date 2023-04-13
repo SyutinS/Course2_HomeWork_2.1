@@ -1,7 +1,5 @@
 public class Hufflepuff extends Student {
-    // Puffendyi трудолюбивы, верны, честны.
-//    private final String firstName;
-//    private final String lastName;
+    // Пуффиндуй: трудолюбивы, верны, честны.
     private final int powerMagic;
     private final int distanceTransgression;
     private final int hardworking;
@@ -11,8 +9,6 @@ public class Hufflepuff extends Student {
 
     public Hufflepuff(String firstName, String lastName, int powerMagic, int distanceTransgression, int hardworking, int loyalty, int honesty) {
         super(firstName, lastName);
-//        this.firstName = firstName;
-//        this.lastName = lastName;
         this.powerMagic = powerMagic;
         this.distanceTransgression = distanceTransgression;
         this.hardworking = hardworking;

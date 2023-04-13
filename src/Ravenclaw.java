@@ -1,7 +1,5 @@
 public class Ravenclaw extends Student {
-    // умны, мудры, остроумны и полны творчества.
-//    private final String firstName;
-//    private final String lastName;
+    // Когтевран: умны, мудры, остроумны и полны творчества.
     private final int powerMagic;
     private final int distanceTransgression;
     private final int smart;
@@ -11,8 +9,6 @@ public class Ravenclaw extends Student {
 
     public Ravenclaw(String firstName, String lastName, int powerMagic, int distanceTransgression, int smart, int wisdom, int witty, int creative) {
         super(firstName, lastName);
-//        this.firstName = firstName;
-//        this.lastName = lastName;
         this.powerMagic = powerMagic;
         this.distanceTransgression = distanceTransgression;
         this.smart = smart;

@@ -1,5 +1,5 @@
 public class Slytherin extends Student {
-    //хитрость, решительность, амбициозность, находчивость и жажда власти.
+    //Слизерин: хитрость, решительность, амбициозность, находчивость и жажда власти.
     private final int powerMagic;
     private final int distanceTransgression;
     private final int tricky;
@@ -9,8 +9,6 @@ public class Slytherin extends Student {
 
     public Slytherin(String firstName, String lastName, int powerMagic, int distanceTransgression, int tricky, int resolute, int ambition, int resourcefulness) {
         super(firstName, lastName);
-//        this.firstName = firstName;
-//        this.lastName = lastName;
         this.powerMagic = powerMagic;
         this.distanceTransgression = distanceTransgression;
         this.tricky = tricky;
